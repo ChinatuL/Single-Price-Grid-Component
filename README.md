@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [https://github.com/ChinatuL/Single-Price-Grid-Component](https://github.com/ChinatuL/Single-Price-Grid-Component)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [https://chinatul.github.io/Single-Price-Grid-Component/](https://chinatul.github.io/Single-Price-Grid-Component/)
 
 ## My process
 
