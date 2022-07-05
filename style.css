@@ -1,0 +1,139 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 53%, 55%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --font-size: 16px;
+    --font-family: "Karla", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+main {
+    width: 90%;
+    margin: 4rem 5%;
+}
+
+.card {
+    padding: 2rem 1.2rem;
+}
+
+.main-title {
+    padding-bottom: 1.5rem;
+    color: var(--cyan);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card-title {
+    padding-bottom: 1.5rem;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card-description {
+    color: var(--light-gray);
+    line-height: 1.5;
+}
+
+.card-button {
+    margin-top: 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 0;
+    background-color: var(--bright-yellow);
+    color: var(--light-gray);
+    font: 700, 1.5rem var(--font-family);
+}
+
+.price-container {
+    padding-bottom: 0.8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.duration {
+    padding: 0.5rem 0 0 1rem;
+    opacity: 0.5;
+}
+
+.header {
+    border-radius: 5px 5px 0 0;
+    background-color: var(--white);
+}
+.header > .card-title {
+    color: var(--bright-yellow);
+}
+.header > .card-description {
+    color: var(--grayish-blue);
+    line-height: 1.8;
+}
+
+.subscription {
+    background-color: var(--cyan);
+}
+
+.features {
+    border-radius: 0 0 5px 5px;
+    background-color: var(--light-cyan);
+}
+
+.features > .card-description {
+    opacity: 0.8;
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container {
+        width: 45%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+
+    .header {
+        grid-column: 1/3;
+    }
+}
